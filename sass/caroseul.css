@@ -1,0 +1,49 @@
+.bg-car {
+  height: calc(100vh - 110px);
+  width: 100%;
+}
+.bg-car img {
+  max-width: 910px;
+  width: 50%;
+  height: calc(100vh - 110px);
+  align-items: center;
+}
+.card-1 {
+  background-color: #e1e0dc;
+}
+.card-2 {
+  background-color: #96192d;
+}
+.card-3 {
+  background-color: #51238d;
+}
+.card-details {
+  position: absolute !important;
+  top: 200px;
+  left: 1000px !important;
+  animation: moveInBottom 2s ease-in;
+  /* transform: translateY(300px); */
+}
+.carousel-title {
+  font-size: 3.6rem;
+}
+.caroseul-details {
+  font-size: 2rem;
+}
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(20rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@media only screen and (max-width: 50em) {
+  .bg-card img {
+    max-width: auto;
+    width: 100%;
+  }
+}

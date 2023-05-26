@@ -1,0 +1,22 @@
+.lancamentos {
+  //   height: 100vh;
+  background-color: #e1e0c8;
+  padding: 6rem;
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__header {
+    font-family: $font-display;
+    color: $color-text;
+    font-weight: 900;
+    font-size: 6rem !important;
+  }
+  &__livros {
+    &--img {
+      width: 100%;
+    }
+  }
+}

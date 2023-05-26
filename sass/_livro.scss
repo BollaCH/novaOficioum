@@ -1,0 +1,96 @@
+.livro-1 {
+  background-image: url(../imgs/fundo-Idosos.jpg);
+}
+.livro-2 {
+  background-image: url(../imgs/fundo-rececionista.jpg);
+  background-color: #f6f6ee;
+}
+.livro-3 {
+  background-image: url(../imgs/fundo-informatica.jpg);
+}
+.section-livro {
+  //   height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 4rem;
+}
+.livro {
+  display: flex;
+  padding: 4rem;
+  gap: 3rem;
+  &__capa {
+    width: 50%;
+    &--img {
+      width: 120%;
+    }
+  }
+  &__details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    &--header {
+      &-text {
+        font-size: 6rem !important;
+        font-family: $font-display;
+        font-weight: 900;
+        margin-bottom: 2rem;
+      }
+    }
+
+    &--text {
+      &-header {
+        font-size: 2.5rem;
+        font-weight: 700;
+        font-family: $font-primary;
+      }
+    }
+    &--list {
+      &-item {
+        font-size: 2rem;
+        font-family: $font-primary;
+      }
+    }
+    &--author {
+      margin-top: 4rem;
+      display: flex;
+      justify-content: flex-end;
+      color: #1c7e82;
+      font-size: 3rem;
+      text-align: end;
+      & span {
+        display: block;
+        margin-bottom: -1.5rem;
+        font-size: 2rem;
+        color: #e85b76;
+      }
+      &-1 {
+        width: 50%;
+        font-family: $font-author;
+      }
+      &-2 {
+        width: 50%;
+        font-family: $font-author;
+      }
+    }
+  }
+}
+.livro__details--text-anexo {
+  font-size: 1.9rem;
+  font-family: $font-primary;
+  text-align: center;
+  margin-top: 2rem;
+
+  background-color: #b2e2f8;
+}
+#rececionista {
+  color: #fc5658;
+  & span {
+    color: #f8b92e;
+  }
+}
+#informatica {
+  color: #6b6b6b;
+  & span {
+    color: #b2e2f8;
+  }
+}
