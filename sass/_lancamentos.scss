@@ -2,6 +2,9 @@
   //   height: 100vh;
   background-color: #e1e0c8;
   padding: 6rem;
+  @media only screen and (max-width: $bp-small) {
+    padding: 6rem 3rem;
+  }
   &-wrapper {
     display: flex;
     align-items: center;
@@ -13,6 +16,9 @@
     color: $color-text;
     font-weight: 900;
     font-size: 6rem !important;
+    @media only screen and (max-width: $bp-small) {
+      font-size: 3rem !important;
+    }
   }
   &__livros {
     &--img {

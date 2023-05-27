@@ -35,11 +35,12 @@
 
     transition: all 0.3s;
   }
-  &__navigation--link:active,
+  &__navigation--link:link,
   &__navigation--link:visited {
     text-decoration: none;
     cursor: pointer;
   }
+  &__navigation--link:active,
   &__navigation--link:hover {
     color: #fff;
     scale: 1.2;
@@ -54,11 +55,12 @@
 .icon-mobile-nav {
   height: 4.8rem;
   width: 4.8rem;
-  color: #333;
+  color: $color-white;
   margin-right: 4rem;
 }
 .icon-mobile-nav[name="close-outline"] {
   display: none;
+  color: $color-primary;
 }
 @media (max-width: 59em) {
   .btn-mobile-nav {
@@ -68,6 +70,7 @@
   .nav-bar {
     background-color: rgba(255, 255, 255, 0.97);
     position: absolute;
+
     top: 0;
     left: 0;
     width: 100%;
@@ -99,5 +102,6 @@
   }
   .nav-bar__navigation--link {
     font-size: 2rem;
+    color: $color-primary;
   }
 }

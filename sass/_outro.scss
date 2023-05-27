@@ -9,9 +9,20 @@
     display: flex;
     padding: 10rem 30rem;
     gap: 10rem;
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+      padding: 2rem 4rem;
+    }
   }
   &__text {
     width: 60%;
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+      background-image: url(../imgs/footer-img.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
     &--details {
       margin-top: 5rem;
       color: $color-text;
@@ -27,6 +38,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+    }
   }
 }
 .footer {
@@ -34,6 +48,11 @@
   background-color: $color-primary;
   justify-content: space-between;
   padding: 8rem 4rem;
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 
   &__details {
     &--text {
@@ -41,6 +60,9 @@
       font-family: $font-display;
       font-weight: 700;
       color: $color-white;
+      @media only screen and (max-width: $bp-medium) {
+        margin-top: 6rem;
+      }
     }
   }
 }

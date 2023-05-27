@@ -1,11 +1,12 @@
 .bg-car {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 120px);
   width: 100%;
 
   & img {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 120px);
     align-items: center;
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-small) {
+      margin-left: -6rem;
     }
   }
 }
@@ -22,16 +23,13 @@
   color: $color-white;
 }
 .card-details {
+  width: 50%;
   position: absolute !important;
   top: 50px;
-  left: 100rem !important;
+  left: 40% !important;
   animation: moveInBottom 2s ease-in;
   @media only screen and (max-width: $bp-largest) {
-    // top: -400px;
-  }
-  @media only screen and (max-width: $bp-medium) {
-    top: 50%;
-    left: 50% !important;
+    left: 40% !important;
   }
 }
 .carousel-title {
@@ -40,6 +38,12 @@
   text-align: end;
   margin-bottom: 2rem;
   font-weight: 900;
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 4.8rem;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 3.2rem;
+  }
 }
 .card-1-title {
   color: $color-primary;
@@ -47,8 +51,14 @@
 .caroseul-details {
   font-size: 2.5rem;
   font-family: $font-primary;
-  text-align: justify;
+  text-align: end;
   font-weight: 400;
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 2rem;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 1.6rem;
+  }
 }
 
 @keyframes moveInBottom {

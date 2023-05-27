@@ -18,8 +18,15 @@
   display: flex;
   padding: 4rem;
   gap: 3rem;
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+    padding: 2rem;
+  }
   &__capa {
     width: 50%;
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+    }
     &--img {
       width: 120%;
     }
@@ -28,12 +35,18 @@
     width: 50%;
     display: flex;
     flex-direction: column;
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+    }
     &--header {
       &-text {
         font-size: 6rem !important;
         font-family: $font-display;
         font-weight: 900;
         margin-bottom: 2rem;
+        @media only screen and (max-width: $bp-small) {
+          font-size: 3.6rem !important;
+        }
       }
     }
 
@@ -57,11 +70,18 @@
       color: #1c7e82;
       font-size: 3rem;
       text-align: end;
+      @media only screen and (max-width: $bp-small) {
+        line-height: 0.8;
+        gap: 2rem;
+      }
       & span {
         display: block;
         margin-bottom: -1.5rem;
         font-size: 2rem;
         color: #e85b76;
+        @media only screen and (max-width: $bp-small) {
+          margin-bottom: 0;
+        }
       }
       &-1 {
         width: 50%;
