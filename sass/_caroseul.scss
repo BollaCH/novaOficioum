@@ -6,7 +6,8 @@
     height: calc(100vh - 115px);
     align-items: center;
     @media only screen and (max-width: $bp-small) {
-      margin-left: -6rem;
+      margin-left: -20rem;
+      // width: 50%;
     }
   }
 }
@@ -23,13 +24,13 @@
   color: $color-white;
 }
 .card-details {
-  width: 40%;
+  width: 60%;
   position: absolute !important;
   top: 50px;
-  left: 50% !important;
+  left: 30% !important;
   animation: moveInBottom 2s ease-in;
   @media only screen and (max-width: $bp-largest) {
-    left: 40% !important;
+    left: 35% !important;
   }
 }
 #caption {
@@ -52,6 +53,7 @@
   text-align: end;
   margin-bottom: 2rem;
   font-weight: 900;
+
   @media only screen and (max-width: $bp-largest) {
     font-size: 4.8rem;
   }
@@ -62,16 +64,22 @@
     text-align: center;
   }
 }
+.carol-title:nth-child(2) {
+  width: 100%;
+}
 .card-1-title {
   color: $color-primary;
   @media only screen and (max-width: $bp-small) {
     color: $color-white;
   }
 }
+
 .caroseul-details {
+  margin-right: 0;
   font-size: 2.5rem;
   font-family: $font-primary;
   text-align: end;
+  padding-left: 20rem;
   font-weight: 400;
   @media only screen and (max-width: $bp-largest) {
     font-size: 2rem;
@@ -81,6 +89,7 @@
   }
   @media only screen and (max-width: $bp-small) {
     text-align: center;
+    padding-left: 0;
   }
 }
 

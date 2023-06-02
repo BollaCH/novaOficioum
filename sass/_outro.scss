@@ -1,6 +1,6 @@
 .outro {
   //   height: 90vh;
-  background-color: #f6f6ee;
+  background-color: $color-white;
   display: flex;
   flex-direction: column;
   scroll-margin-top: 115px;
@@ -51,6 +51,7 @@
     }
   }
 }
+
 .footer {
   display: flex;
   background-color: $color-primary;
@@ -83,6 +84,10 @@
 }
 .footer__btn {
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+.footer__btn:hover {
+  scale: 1.1;
 }
 .form__wrapper {
   display: none;
