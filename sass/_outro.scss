@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   scroll-margin-top: 115px;
+  position: relative;
 
   &__wrapper {
     // height: 70vh;
@@ -81,5 +82,45 @@
   font-weight: inherit;
 }
 .footer__btn {
+  cursor: pointer;
+}
+.form__wrapper {
+  display: none;
+  background-color: #1a4676;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 9px;
+}
+.form-open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 22rem;
+  right: 3%;
+  width: 35%;
+  min-height: 60vh;
+
+  animation: moveInBottom 1s ease-in;
+  @media only screen and (max-width: $bp-large) {
+    width: 45%;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    width: 55%;
+  }
+  @media only screen and (max-width: $bp-small) {
+    width: 75%;
+  }
+}
+.icon-close-form {
+  // display: block;
+  height: 4.8rem;
+  width: 4.8rem;
+  color: $color-white;
+  // margin-right: 4rem;
+  position: absolute;
+  right: 25px;
+  top: 25px;
   cursor: pointer;
 }

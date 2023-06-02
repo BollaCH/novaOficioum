@@ -1,0 +1,98 @@
+.formsection {
+  background-color: $color-grey-light-2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form__content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a4676;
+  @media only screen and (max-width: $bp-medium) {
+    height: 90%;
+    width: 90%;
+    justify-content: center;
+  }
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @media only screen and (max-width: $bp-medium) {
+    width: 80%;
+    margin-left: 0;
+  }
+  &__group {
+    margin-bottom: 2rem;
+    @media only screen and (max-width: $bp-medium) {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1.5rem 7rem;
+    border-radius: 2px;
+    background-color: rgba($color-grey-light-1, 0.5);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 100%;
+    display: block;
+    transition: all 0.3s;
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-text, 0.1);
+      border-bottom: 3px solid $color-primary;
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid $color-grey-dark-1;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $color-grey-dark-2;
+    }
+  }
+  &__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+  }
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+}
+#phone {
+  padding: 1.5rem 7rem;
+}
+.form__success {
+  display: none;
+}
+.form__success-active {
+  display: block;
+  background-color: green;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.display-none {
+  display: none;
+}

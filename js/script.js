@@ -1,7 +1,15 @@
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
-const formEl = document.querySelector(".form");
-const formBtn = document.querySelector("#faleconosco");
+const formEl = document.querySelector(".form__wrapper");
+const contatoBtn = document.querySelector("#faleconosco");
+const formLink = document.querySelector(".form-ref");
+const formClose = document.querySelector(".icon-close-form")
+const formBtn = document.querySelector(".form-btn")
+const form = document.querySelector(".form")
+const formS = document.querySelector(".form__success")
+
+
+
 function remove() {
   headerEl.classList.remove("nav-open")
 }
@@ -16,6 +24,21 @@ document.querySelectorAll('.nav-bar__navigation--link').forEach(item => {
   })
 })
 
-formBtn.addEventListener("click", function () {
+contatoBtn.addEventListener("click", function () {
   formEl.classList.toggle("form-open");
 });
+formLink.addEventListener("click", function () {
+  formEl.classList.toggle("form-open");
+});
+formClose.addEventListener("click", function () {
+  formEl.classList.remove("form-open")
+})
+// formBtn.addEventListener("submit", function (event) {
+// //   event.preventDefault
+// // })
+
+// formBtn.addEventListener("submit", function () {
+//   form.classList.add("d-none");
+//   console.log(su)
+//   // formS.classList.add(".form__success-active")
+// })
