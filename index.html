@@ -403,7 +403,7 @@
         </div>
       </div>
     </section>
-    <section class="lojas" id="lojas"></section>
+    <!-- <section class="lojas" id="lojas"></section> -->
     <section class="outro" id="quemsomos">
       <div class="outro__wrapper">
         <div class="outro__text">
@@ -438,7 +438,9 @@
               Barreiro - Portugal - 2830-289
               <br
             /></a>
-            Tel.: +351 914 896 452
+            <a href="tel:+351914896452" class="address-link">
+              Tel.: +351 914 896 452</a
+            >
           </p>
         </div>
         <div class="footer__btn">
@@ -451,6 +453,7 @@
         <div class="form__wrapper">
           <div class="form__content">
             <ion-icon class="icon-close-form" name="close-outline"></ion-icon>
+
             <form action="#" class="form">
               <div class="form__group">
                 <input
@@ -458,6 +461,7 @@
                   class="form__input"
                   placeholder="Full name"
                   id="name"
+                  name="name"
                   required
                 />
                 <label for="name" class="form__label">Full name</label>
@@ -469,6 +473,7 @@
                   class="form__input"
                   placeholder="Email address"
                   id="email"
+                  name="email"
                   required
                 />
                 <label for="email" class="form__label">Email address</label>
@@ -479,14 +484,26 @@
                   class="form__input"
                   placeholder="Telefone"
                   id="phone"
+                  name="phone"
                   required
                 />
                 <!-- <label for="phone" class="form__label">Telefone</label> -->
               </div>
+              <div class="form__group">
+                <label for="comment" class="form__label comment__label"
+                  >Fale conosco:</label
+                >
+                <textarea
+                  class="form__input"
+                  name="comment"
+                  id="comment"
+                  cols="35"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
               <div class="button">
-                <button class="form-btn" type="submit" onclick="formSent()">
-                  Sign up
-                </button>
+                <button class="form-btn">Sign up</button>
               </div>
             </form>
             <div class="form__success">
@@ -528,7 +545,7 @@
       });
     </script>
     <!-- Phone input test -->
-    <script>
+    <!-- <script>
       const formSuccess = document.querySelector(".form__success");
       const formForm = document.querySelector(".form");
 
@@ -536,6 +553,6 @@
         formSuccess.classList.add("form__success-active");
         formForm.classList.add("display-none");
       }
-    </script>
+    </script> -->
   </body>
 </html>
