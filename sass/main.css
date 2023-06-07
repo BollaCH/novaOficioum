@@ -445,10 +445,80 @@ body {
   background-color: #7dc2a6;
 }
 
-.lojas {
+.loja {
   background-color: #f6f6ee;
-  height: 100vh;
+  padding: 20rem 0;
   scroll-margin-top: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loja__container {
+  width: 60%;
+}
+.loja__img {
+  width: 60%;
+}
+.loja__img--img {
+  width: 100%;
+}
+.loja__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5rem;
+}
+.loja__btn--link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.bg-cdi {
+  background-image: url(../imgs/fundo-Idosos.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-rh {
+  background-image: url(../imgs/fundo-rececionista-05.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-iai {
+  background-image: url(../imgs/fundo-informatica.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.accordion-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem !important;
+}
+
+.accordion-button {
+  font-size: 3rem !important;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #013167 !important;
+  color: white !important;
+}
+
+.btn--loja {
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  background-color: #7dc2a6;
+  width: 120%;
+  text-align: center;
 }
 
 .form__wrapper {
@@ -623,7 +693,7 @@ body {
 }
 
 .outro {
-  background-color: #f6f6ee;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   scroll-margin-top: 115px;
