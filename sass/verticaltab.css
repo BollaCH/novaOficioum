@@ -1,0 +1,116 @@
+.loja {
+  /* background-color: #f6f6ee; */
+  padding: 10rem 0;
+  scroll-margin-top: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loja__container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loja__img {
+  width: 60%;
+}
+.loja__img--img {
+  width: 100%;
+}
+.loja__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5rem;
+}
+.loja__btn--link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.bg-cdi {
+  background-image: url(../imgs/fundo-Idosos.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-rh {
+  background-image: url(../imgs/fundo-rececionista-05.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-iai {
+  background-image: url(../imgs/fundo-informatica.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.btn--loja {
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  background-color: #7dc2a6;
+  width: 120%;
+  text-align: center;
+}
+.accordion-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem !important;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 9px;
+}
+.nav-link {
+  font-size: 1.8rem;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  color: #495057;
+  position: relative;
+}
+
+.nav.active {
+  background-color: #013167;
+  color: white;
+}
+.nav {
+  width: 130%;
+  height: 100%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 9px;
+}
+
+.nav-pills {
+  --bs-nav-pills-link-active-bg: #013167;
+}
+.nav-pills .nav-link {
+  border-radius: 0;
+}
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 20%;
+  width: 3px;
+  background-color: #013167;
+  transform: scaleY(0);
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+    background-color 0.1s;
+}
+.nav-link:link,
+.nav-link:visited {
+  position: relative;
+  z-index: 10;
+}
+.nav-link:hover::before,
+.nav-link:focus::before {
+  transform: scaleY(1);
+  width: 100%;
+}

@@ -31,6 +31,7 @@
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <!-- Phone input test -->
+    <link rel="stylesheet" href="sass/verticaltab.css" />
   </head>
   <body>
     <div class="div" id="home"></div>
@@ -404,7 +405,7 @@
         </div>
       </div>
     </section>
-    <section class="loja" id="lojas">
+    <!-- <section class="loja" id="lojas">
       <main class="loja__container">
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">
@@ -526,6 +527,176 @@
               id="collapseThree"
               class="accordion-collapse collapse"
               data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body bg-iai">
+                <div class="loja__img">
+                  <img
+                    src="imgs/Informatica-pagina-vendas.png"
+                    alt=""
+                    class="loja__img--img"
+                  />
+                </div>
+                <div class="loja__btn">
+                  <div class="loja__btn--link">
+                    <a
+                      href="https://www.wook.pt/livro/introducao-a-informatica-rodolfo-barriviera/28632297"
+                      class="nav-bar__navigation--link btn--loja"
+                      target="_blank"
+                      >Wook</a
+                    >
+                    <a
+                      href="https://www.fnac.pt/Introducao-a-Informatica-Rodolfo-Barriviera/a11069272#omnsearchpos=2"
+                      class="nav-bar__navigation--link btn--loja"
+                      target="_blank"
+                      >Fnac</a
+                    >
+                    <a
+                      href="https://www.almedina.net/introdu-o-inform-tica-1685711034.html"
+                      class="nav-bar__navigation--link btn--loja"
+                      target="_blank"
+                      >Almedina
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section> -->
+    <section class="loja" id="lojas">
+      <main class="loja__container">
+        <div class="d-flex align-items-start">
+          <div
+            class="nav flex-column nav-pills me-3"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <button
+              class="nav-link active"
+              id="v-pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-home"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-home"
+              aria-selected="true"
+            >
+              Cuidador de Idosos
+            </button>
+            <button
+              class="nav-link"
+              id="v-pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-profile"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-profile"
+              aria-selected="false"
+            >
+              Rececionista de Hotel
+            </button>
+
+            <button
+              class="nav-link"
+              id="v-pills-messages-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-messages"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-messages"
+              aria-selected="false"
+            >
+              Introdução à Informática
+            </button>
+          </div>
+          <div class="tab-content" id="v-pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="v-pills-home"
+              role="tabpanel"
+              aria-labelledby="v-pills-home-tab"
+              tabindex="0"
+            >
+              <div class="accordion-body bg-cdi">
+                <div class="loja__img">
+                  <img
+                    src="imgs/Cuidador-de-idosos-pagina-vendas.png"
+                    alt=""
+                    class="loja__img--img"
+                  />
+                </div>
+                <div class="loja__btn">
+                  <div class="loja__btn--link">
+                    <a
+                      href="https://www.wook.pt/livro/cuidador-de-idosos-rosane-laurindo/28632296"
+                      class="nav-bar__navigation--link btn--loja"
+                      target="_blank"
+                      >Wook</a
+                    >
+                    <a
+                      href="https://www.fnac.pt/Cuidador-de-Idosos-Rosane-Laurindo/a11069271#omnsearchpos=1"
+                      class="nav-bar__navigation--link btn--loja"
+                      target="_blank"
+                      >Fnac</a
+                    >
+                    <a
+                      href="https://www.almedina.net/cuidador-de-idosos-1685711045.html"
+                      class="nav-bar__navigation--link btn--loja"
+                      target="_blank"
+                      >Almedina
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-profile"
+              role="tabpanel"
+              aria-labelledby="v-pills-profile-tab"
+              tabindex="0"
+            >
+              <div class="accordion-body bg-rh">
+                <div class="loja__img">
+                  <img
+                    src="imgs/Rececionista-pagina-vendas.png"
+                    alt=""
+                    class="loja__img--img"
+                  />
+                </div>
+                <div class="loja__btn">
+                  <div class="loja__btn--link">
+                    <a
+                      href="https://www.wook.pt/livro/rececionista-de-hotel-waldemar-magnavita/28632298#details"
+                      class="nav-bar__navigation--link btn--loja"
+                      target="_blank"
+                      >Wook</a
+                    >
+                    <a
+                      href="https://www.fnac.pt/Rececionista-de-Hotel-Waldemar-Magnavita/a11069273#omnsearchpos=3"
+                      class="nav-bar__navigation--link btn--loja"
+                      target="_blank"
+                      >Fnac</a
+                    >
+                    <a
+                      href="https://www.almedina.net/rececionista-de-hotel-1685711040.html"
+                      class="nav-bar__navigation--link btn--loja"
+                      target="_blank"
+                      >Almedina
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="v-pills-messages"
+              role="tabpanel"
+              aria-labelledby="v-pills-messages-tab"
+              tabindex="0"
             >
               <div class="accordion-body bg-iai">
                 <div class="loja__img">
