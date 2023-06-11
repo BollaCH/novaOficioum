@@ -25,12 +25,12 @@
 }
 .card-details {
   width: 60%;
-  position: absolute !important;
+  position: absolute;
   top: 50px;
-  left: 30% !important;
+  left: 30%;
   animation: moveInBottom 2s ease-in;
   @media only screen and (max-width: $bp-largest) {
-    left: 35% !important;
+    left: 35%;
   }
 }
 #caption {
@@ -39,7 +39,7 @@
     inset: 0;
     margin: auto;
     right: 0;
-    left: 0 !important;
+    left: 0;
     z-index: 3;
     text-align: center;
     width: 100%;
@@ -76,13 +76,13 @@
 
 .caroseul-details {
   margin-right: 0;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-family: $font-primary;
   text-align: end;
   padding-left: 20rem;
   font-weight: 400;
   @media only screen and (max-width: $bp-largest) {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
   @media only screen and (max-width: $bp-medium) {
     font-size: 1.6rem;
@@ -117,4 +117,7 @@
     background: rgba($color: #000000, $alpha: 0.7);
     z-index: 2;
   }
+}
+.carousel-indicators {
+  z-index: 20;
 }

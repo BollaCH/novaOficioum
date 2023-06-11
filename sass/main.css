@@ -61,14 +61,14 @@ body {
 
 .card-details {
   width: 60%;
-  position: absolute !important;
+  position: absolute;
   top: 50px;
-  left: 30% !important;
+  left: 30%;
   animation: moveInBottom 2s ease-in;
 }
 @media only screen and (max-width: 75em) {
   .card-details {
-    left: 35% !important;
+    left: 35%;
   }
 }
 
@@ -78,7 +78,7 @@ body {
     inset: 0;
     margin: auto;
     right: 0;
-    left: 0 !important;
+    left: 0;
     z-index: 3;
     text-align: center;
     width: 100%;
@@ -125,7 +125,7 @@ body {
 
 .caroseul-details {
   margin-right: 0;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-family: "Proxima Nova", sans-serif;
   text-align: end;
   padding-left: 20rem;
@@ -133,7 +133,7 @@ body {
 }
 @media only screen and (max-width: 75em) {
   .caroseul-details {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 }
 @media only screen and (max-width: 50em) {
@@ -174,6 +174,10 @@ body {
   }
 }
 
+.carousel-indicators {
+  z-index: 20;
+}
+
 .lancamentos {
   background-color: #e1e0c8;
   padding: 6rem;
@@ -194,11 +198,11 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #495057;
   font-weight: 900;
-  font-size: 6rem !important;
+  font-size: 6rem;
 }
 @media only screen and (max-width: 37.5em) {
   .lancamentos__header {
-    font-size: 3rem !important;
+    font-size: 3rem;
   }
 }
 .lancamentos__livros--img {
@@ -206,16 +210,16 @@ body {
 }
 
 .livro-1 {
-  background-image: url(../imgs/fundo-Idosos.jpg);
+  background-image: url(../imgs/fundo-Idosos.avif);
 }
 
 .livro-2 {
-  background-image: url(../imgs/fundo-rececionista.jpg);
+  background-image: url(../imgs/fundo-rececionista.avif);
   background-color: #f6f6ee;
 }
 
 .livro-3 {
-  background-image: url(../imgs/fundo-informatica.jpg);
+  background-image: url(../imgs/fundo-informatica.avif);
 }
 
 .section-livro {
@@ -257,14 +261,14 @@ body {
   }
 }
 .livro__details--header-text {
-  font-size: 6rem !important;
+  font-size: 6rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   margin-bottom: 2rem;
 }
 @media only screen and (max-width: 37.5em) {
   .livro__details--header-text {
-    font-size: 3.6rem !important;
+    font-size: 3.6rem;
   }
 }
 .livro__details--text-header {
@@ -447,14 +451,17 @@ body {
 
 .loja {
   background-color: #f6f6ee;
-  padding: 20rem 0;
+  padding: 10rem 0;
   scroll-margin-top: 115px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .loja__container {
-  width: 60%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .loja__img {
   width: 60%;
@@ -468,28 +475,33 @@ body {
   align-items: center;
   margin-right: 5rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .loja__btn {
+    margin-right: 0;
+  }
+}
 .loja__btn--link {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .bg-cdi {
-  background-image: url(../imgs/fundo-Idosos.jpg);
+  background-image: url(../imgs/fundo-Idosos.avif);
   background-position: center;
   background-size: cover;
 }
 
 .bg-rh {
-  background-image: url(../imgs/fundo-rececionista-05.jpg);
+  background-image: url(../imgs/fundo-rececionista-05.avif);
   background-position: center;
   background-size: cover;
 }
 
 .bg-iai {
-  background-image: url(../imgs/fundo-informatica.jpg);
+  background-image: url(../imgs/fundo-informatica.avif);
   background-position: center;
   background-size: cover;
 }
@@ -498,18 +510,27 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 4rem !important;
+  padding: 1rem 2rem;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 9px;
+}
+@media only screen and (max-width: 37.5em) {
+  .accordion-body {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 
 .accordion-button {
-  font-size: 3rem !important;
+  font-size: 3rem;
   font-weight: 900;
   font-family: "Montserrat", sans-serif;
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #013167 !important;
-  color: white !important;
+  background-color: #013167;
+  color: white;
 }
 
 .btn--loja {
@@ -519,6 +540,59 @@ body {
   background-color: #7dc2a6;
   width: 120%;
   text-align: center;
+}
+
+.nav-link {
+  font-size: 1.8rem;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  color: #495057;
+  position: relative;
+}
+
+.nav.active {
+  background-color: #013167;
+  color: white;
+}
+
+.nav {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 9px;
+}
+
+.nav-pills {
+  --bs-nav-pills-link-active-bg: #013167;
+}
+
+.nav-pills .nav-link {
+  border-radius: 0;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 20%;
+  width: 3px;
+  background-color: #013167;
+  transform: scaleY(0);
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  position: relative;
+  z-index: 10;
+}
+
+.nav-link:hover::before,
+.nav-link:focus::before {
+  transform: scaleY(1);
+  width: 100%;
 }
 
 .form__wrapper {

@@ -1,12 +1,12 @@
 .livro-1 {
-  background-image: url(../imgs/fundo-Idosos.jpg);
+  background-image: url(../imgs/fundo-Idosos.avif);
 }
 .livro-2 {
-  background-image: url(../imgs/fundo-rececionista.jpg);
+  background-image: url(../imgs/fundo-rececionista.avif);
   background-color: #f6f6ee;
 }
 .livro-3 {
-  background-image: url(../imgs/fundo-informatica.jpg);
+  background-image: url(../imgs/fundo-informatica.avif);
 }
 .section-livro {
   //   height: 100vh;
@@ -40,12 +40,12 @@
     }
     &--header {
       &-text {
-        font-size: 6rem !important;
+        font-size: 6rem;
         font-family: $font-display;
         font-weight: 900;
         margin-bottom: 2rem;
         @media only screen and (max-width: $bp-small) {
-          font-size: 3.6rem !important;
+          font-size: 3.6rem;
         }
       }
     }

@@ -16,9 +16,9 @@
     font-family: $font-display;
     color: $color-text;
     font-weight: 900;
-    font-size: 6rem !important;
+    font-size: 6rem;
     @media only screen and (max-width: $bp-small) {
-      font-size: 3rem !important;
+      font-size: 3rem;
     }
   }
   &__livros {
