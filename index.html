@@ -759,13 +759,17 @@
           To: "arroiozinhu@gmail.com",
           From: "arroiozinhu@gmail.com",
           Subject: "Novo contato",
-          Body: {
-            name: document.querySelector("#name").value,
-            mail: document.querySelector("#email").value,
-            country: document.querySelector(".iti__selected-flag").title,
-            phone: document.querySelector("#phone").value,
-            comment: document.querySelector("#comment").value,
-          },
+          Body:
+            "Nome: " +
+            document.querySelector("#name").value +
+            "<br> E-mail: " +
+            document.querySelector("#email").value +
+            "<br> País: " +
+            document.querySelector(".iti__selected-flag").title +
+            "<br> Telefone: " +
+            document.querySelector("#phone").value +
+            "<br> Menssagem: " +
+            document.querySelector("#comment").value,
         });
       }
     </script>
