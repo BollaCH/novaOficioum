@@ -31,6 +31,47 @@ body {
   display: none;
 }
 
+#alert {
+  position: fixed;
+  z-index: 30000;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.alert {
+  flex-direction: column;
+  background-color: #7dc2a6;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 13px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.alert__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.alert__header--icon {
+  width: 25px;
+}
+.alert__header--title {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+.alert__text--details {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: "Proxima Nova", sans-serif;
+  text-align: center;
+  align-items: center;
+}
+
 .bg-car {
   height: calc(100vh - 115px);
   width: 100%;

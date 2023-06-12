@@ -34,6 +34,27 @@
     <script defer src="js/script.js"></script>
   </head>
   <body>
+    <div
+      class="alert alert-success d-flex align-items-center alert-dismissible fade"
+      role="alert"
+      id="alert"
+    >
+      <div class="alert__header">
+        <img class="alert__header--icon" src="imgs/Favicon.png" alt="" />
+        <h3 class="alert__header--title">Contato enviado com sucesso</h3>
+      </div>
+      <div class="alert__text">
+        <p class="alert__text--details">
+          Agradecemos o contato, responderemos voce assim que possivel
+        </p>
+      </div>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
     <div class="div" id="home"></div>
     <header class="header">
       <a href="#home">
@@ -405,165 +426,6 @@
         </div>
       </div>
     </section>
-    <!-- <section class="loja" id="lojas">
-      <main class="loja__container">
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                Cuidador de Idosos
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body bg-cdi">
-                <div class="loja__img">
-                  <img
-                    src="imgs/Cuidador-de-idosos-pagina-vendas.png"
-                    alt=""
-                    class="loja__img--img"
-                  />
-                </div>
-                <div class="loja__btn">
-                  <div class="loja__btn--link">
-                    <a
-                      href="https://www.wook.pt/livro/cuidador-de-idosos-rosane-laurindo/28632296"
-                      class="nav-bar__navigation--link btn--loja"
-                      target="_blank"
-                      >Wook</a
-                    >
-                    <a
-                      href="https://www.fnac.pt/Cuidador-de-Idosos-Rosane-Laurindo/a11069271#omnsearchpos=1"
-                      class="nav-bar__navigation--link btn--loja"
-                      target="_blank"
-                      >Fnac</a
-                    >
-                    <a
-                      href="https://www.almedina.net/cuidador-de-idosos-1685711045.html"
-                      class="nav-bar__navigation--link btn--loja"
-                      target="_blank"
-                      >Almedina
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                Rececionista de Hotel
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body bg-rh">
-                <div class="loja__img">
-                  <img
-                    src="imgs/Rececionista-pagina-vendas.png"
-                    alt=""
-                    class="loja__img--img"
-                  />
-                </div>
-                <div class="loja__btn">
-                  <div class="loja__btn--link">
-                    <a
-                      href="https://www.wook.pt/livro/rececionista-de-hotel-waldemar-magnavita/28632298#details"
-                      class="nav-bar__navigation--link btn--loja"
-                      target="_blank"
-                      >Wook</a
-                    >
-                    <a
-                      href="https://www.fnac.pt/Rececionista-de-Hotel-Waldemar-Magnavita/a11069273#omnsearchpos=3"
-                      class="nav-bar__navigation--link btn--loja"
-                      target="_blank"
-                      >Fnac</a
-                    >
-                    <a
-                      href="https://www.almedina.net/rececionista-de-hotel-1685711040.html"
-                      class="nav-bar__navigation--link btn--loja"
-                      target="_blank"
-                      >Almedina
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                Introdução à Informática
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body bg-iai">
-                <div class="loja__img">
-                  <img
-                    src="imgs/Informatica-pagina-vendas.png"
-                    alt=""
-                    class="loja__img--img"
-                  />
-                </div>
-                <div class="loja__btn">
-                  <div class="loja__btn--link">
-                    <a
-                      href="https://www.wook.pt/livro/introducao-a-informatica-rodolfo-barriviera/28632297"
-                      class="nav-bar__navigation--link btn--loja"
-                      target="_blank"
-                      >Wook</a
-                    >
-                    <a
-                      href="https://www.fnac.pt/Introducao-a-Informatica-Rodolfo-Barriviera/a11069272#omnsearchpos=2"
-                      class="nav-bar__navigation--link btn--loja"
-                      target="_blank"
-                      >Fnac</a
-                    >
-                    <a
-                      href="https://www.almedina.net/introdu-o-inform-tica-1685711034.html"
-                      class="nav-bar__navigation--link btn--loja"
-                      target="_blank"
-                      >Almedina
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-    </section> -->
     <section class="loja" id="lojas">
       <main class="loja__container">
         <div class="d-flex align-items-start">
@@ -752,6 +614,7 @@
         </div>
         <div class="outro__img"></div>
       </div>
+
       <footer class="footer">
         <div class="footer__details">
           <p class="footer__details--text">
@@ -784,7 +647,11 @@
           <div class="form__content">
             <ion-icon class="icon-close-form" name="close-outline"></ion-icon>
 
-            <form action="#" class="form">
+            <form
+              action="#"
+              class="form"
+              onsubmit="sendEmail(); reset(); event.preventDefault();"
+            >
               <div class="form__group">
                 <input
                   type="text"
@@ -833,20 +700,22 @@
                 ></textarea>
               </div>
               <div class="button">
-                <button class="form-btn">Sign up</button>
+                <button type="submit" class="form-btn">Sign up</button>
               </div>
             </form>
-            <div class="form__success">
+            <!-- <div class="form__success">
               <h3>Obrigado</h3>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Laboriosam, exercitationem.
               </p>
-            </div>
+            </div> -->
           </div>
         </div>
       </footer>
     </section>
+    <!-- Modal -->
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -875,14 +744,26 @@
       });
     </script>
     <!-- Phone input test -->
-    <!-- <script>
-      const formSuccess = document.querySelector(".form__success");
-      const formForm = document.querySelector(".form");
 
-      function formSent() {
-        formSuccess.classList.add("form__success-active");
-        formForm.classList.add("display-none");
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "arroiozinhu@gmail.com",
+          Password: "6552F2E96E8B893987F318544E00D21356DC",
+          To: "arroiozinhu@gmail.com",
+          From: "arroiozinhu@gmail.com",
+          Subject: "Novo contato",
+          Body: {
+            name: document.querySelector("#name").value,
+            mail: document.querySelector("#email").value,
+            country: document.querySelector(".iti__selected-flag").title,
+            phone: document.querySelector("#phone").value,
+            comment: document.querySelector("#comment").value,
+          },
+        });
       }
-    </script> -->
+    </script>
   </body>
 </html>

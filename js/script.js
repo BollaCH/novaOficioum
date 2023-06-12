@@ -7,6 +7,7 @@ const formClose = document.querySelector(".icon-close-form")
 const formBtn = document.querySelector(".form-btn")
 const form = document.querySelector(".form")
 const formS = document.querySelector(".form__success")
+const sucessAlert = document.querySelector("#alert")
 
 
 
@@ -33,12 +34,9 @@ formLink.addEventListener("click", function () {
 formClose.addEventListener("click", function () {
   formEl.classList.remove("form-open")
 })
-// formBtn.addEventListener("submit", function (event) {
-// //   event.preventDefault
-// // })
-
-// formBtn.addEventListener("submit", function () {
-//   form.classList.add("d-none");
-//   console.log(su)
-//   // formS.classList.add(".form__success-active")
-// })
+form.addEventListener("submit", () => {
+  formEl.classList.remove("form-open")
+})
+form.addEventListener("submit", () => {
+  sucessAlert.classList.add("show")
+})
