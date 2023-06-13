@@ -20,7 +20,7 @@ html {
 
 body {
   font-family: "Proxima Nova", sans-serif;
-  color: #6d5d4b;
+  color: #495057;
   font-weight: 300;
   line-height: 1.6;
   height: 100%;
@@ -33,7 +33,7 @@ body {
 
 #alert {
   position: fixed;
-  z-index: 30000;
+  z-index: 20;
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
@@ -641,7 +641,7 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  z-index: 1000000;
+  z-index: 1000;
   top: 0;
   left: 0;
   width: 100%;
@@ -657,11 +657,9 @@ body {
 }
 
 .form__content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #1a4676;
   padding: 4rem 20rem;
+  margin: auto;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border-radius: 9px;
 }
@@ -679,6 +677,7 @@ body {
 }
 @media only screen and (max-width: 50em) {
   .form__content {
+    overflow: scroll;
     padding: 4rem 10rem;
   }
 }
@@ -689,15 +688,17 @@ body {
 }
 
 .form {
+  z-index: 1001;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: auto;
+  margin: auto;
 }
 @media only screen and (max-width: 50em) {
   .form {
     width: 80%;
-    margin-left: 0;
   }
 }
 .form__group {
@@ -733,18 +734,19 @@ body {
   border-bottom: 3px solid #013167;
 }
 .form__input:focus:invalid {
-  border-bottom: 3px solid #54483a;
+  border-bottom: 3px solid #013167;
 }
 .form__input::-webkit-input-placeholder {
-  color: #6d5d4b;
+  color: #495057;
 }
 .form__label {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   margin-left: 2rem;
   margin-top: 0.7rem;
   display: block;
   transition: all 0.3s;
+  color: #fff;
 }
 .form__input:-moz-placeholder-shown + .form__label {
   opacity: 0;
@@ -759,21 +761,6 @@ body {
 
 #phone {
   padding: 1.5rem 7rem;
-}
-
-.form__success {
-  display: none;
-}
-
-.form__success-active {
-  display: block;
-  background-color: green;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 #comment {
