@@ -1,6 +1,5 @@
 #alert {
   position: fixed;
-  z-index: 20;
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
@@ -12,6 +11,7 @@
   padding: 2rem;
   border-radius: 13px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: -20;
   &__header {
     display: flex;
     align-items: center;
@@ -38,4 +38,7 @@
       align-items: center;
     }
   }
+}
+.show {
+  z-index: 20;
 }
